@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+      <title>My Javascript Page</title>
+      <link rel="stylesheet" href="style/style.min.css">
+  </head>
+  <body>
+
+  <div class="separator"></div>
+
+  <div class="part1">
+
+    <p>Enter string: </p>
+    <input id="str" type="string" value=""></input>
+
+    <p>Enter char: </p>
+    <input id="chr" type="char" maxlength="1" value=""></input>
+
+    <br><button class="b1" onclick="document.getElementById('answer').innerHTML = countChar(document.getElementById('str') , document.getElementById('chr'))">Find</button>
+
+    <p class="il" id="answer"></p>
+
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="part2">
+
+    <select id="slct" class="br">
+      <option value=1>Lannister</option>
+      <option value=2>Mormont</option>
+      <option value=3>Targaryen</option>
+      <option value=4>Stark</option>
+    </select>
+
+    <button onclick="document.getElementById('track').innerHTML = logConnections(document.getElementById('slct'))">Start</button>
+
+    <p id="track"></p>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="part3">
+
+  <button onclick="document.getElementById('story').innerHTML = homeConstructor()">Tell the story</button>
+  <p id="story"></p>
+
+  </div>
+
+  </body>
+
+  <script type="text/javascript" src="js/jquery-installer/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/test.js"></script>
+</html>
